@@ -1,0 +1,39 @@
+{
+  "W1": {
+    "first_activity": "2026-09-30T12:00:00Z",
+    "trades": [
+      {"mint": "MintA", "side": "buy",  "ts": "2026-09-01T00:00:00Z", "token_amount": 100, "price": 1.0,  "quote": "SOL"},
+      {"mint": "MintA", "side": "sell", "ts": "2026-09-01T00:00:30Z", "token_amount": 100, "price": 2.0,  "quote": "SOL"},
+      {"mint": "MintB", "side": "buy",  "ts": "2026-09-02T00:00:00Z", "token_amount": 50,  "price": 0.5,  "quote": "SOL"},
+      {"mint": "MintB", "side": "sell", "ts": "2026-09-02T00:01:40Z", "token_amount": 50,  "price": 0.75, "quote": "SOL"}
+    ],
+    "holdings": [
+      {"mint": "TargetMint1111111111111111111111111111111", "amount": 1000},
+      {"mint": "MintX", "amount": 10}, {"mint": "MintY", "amount": 5}, {"mint": "MintZ", "amount": 1},
+      {"mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "amount": 100}
+    ]
+  },
+  "W2": {
+    "first_activity": "2026-09-28T00:00:00Z",
+    "trades": [
+      {"mint": "MintA", "side": "buy",  "ts": "2026-09-01T00:00:10Z", "token_amount": 200, "price": 1.2, "quote": "SOL"},
+      {"mint": "MintA", "side": "sell", "ts": "2026-09-01T00:20:10Z", "token_amount": 200, "price": 3.0, "quote": "SOL"},
+      {"mint": "MintC", "side": "buy",  "ts": "2026-09-10T00:00:00Z", "token_amount": 10,  "price": 1.0, "quote": "SOL"}
+    ],
+    "holdings": [{"mint": "MintX", "amount": 3}, {"mint": "MintY", "amount": 3}, {"mint": "MintZ", "amount": 3}]
+  },
+  "W3": {
+    "first_activity": "2025-01-01T00:00:00Z",
+    "trades": [
+      {"mint": "MintD", "side": "buy",  "ts": "2026-08-01T00:00:00Z", "token_amount": 10,  "price": 1.0, "quote": "SOL"},
+      {"mint": "MintD", "side": "sell", "ts": "2026-08-01T00:00:45Z", "token_amount": 9.6, "price": 1.5, "quote": "SOL"},
+      {"mint": "TargetMint1111111111111111111111111111111", "side": "buy", "ts": "2026-09-20T00:00:00Z", "token_amount": 600, "price": 0.01, "quote": "SOL"}
+    ],
+    "holdings": [{"mint": "MintX", "amount": 1}, {"mint": "MintY", "amount": 1}]
+  },
+  "W4": {
+    "first_activity": "2026-09-30T20:00:00Z",
+    "trades": [],
+    "holdings": [{"mint": "MintX", "amount": 0}, {"mint": "MintQ", "amount": 1}]
+  }
+}

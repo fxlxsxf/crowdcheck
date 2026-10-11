@@ -1,0 +1,13 @@
+{
+  "P1": {
+    "first_activity": "not a date",
+    "trades": [
+      {"mint": "MintA", "side": "buy", "ts": "2026-09-01T00:00:00Z", "token_amount": 10},
+      {"mint": "MintA", "side": "sell", "ts": "2026-09-01T00:02:00Z", "token_amount": 10},
+      {"side": "buy", "ts": "2026-09-01T00:00:00Z", "token_amount": 10},
+      {"mint": "MintB", "ts": "2026-09-01T00:00:00Z"}
+    ],
+    "holdings": [{"amount": 5}, {"mint": "MintX"}]
+  },
+  "P2": {}
+}

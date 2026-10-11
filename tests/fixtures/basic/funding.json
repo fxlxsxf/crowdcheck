@@ -1,0 +1,9 @@
+{
+  "first_funder": {"Creator1": "Funder1"},
+  "funded_by": {"Funder1": ["Creator1", "Sib1", "Sib2"]},
+  "created_by": {
+    "Creator1": ["TargetMint1111111111111111111111111111111", "MintP1"],
+    "Sib1": ["MintP2"],
+    "Sib2": ["MintP3"]
+  }
+}

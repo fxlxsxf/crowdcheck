@@ -1,0 +1,9 @@
+{
+  "TargetMint1111111111111111111111111111111": [
+    {"wallet": "W1", "amount": 1000, "share_of_supply": 0.10},
+    {"wallet": "W2", "amount": 800, "share_of_supply": 0.08},
+    {"wallet": "W3", "amount": 600, "share_of_supply": 0.06},
+    {"wallet": "W4", "amount": 400, "share_of_supply": 0.04},
+    {"wallet": "W5", "amount": 200, "share_of_supply": 0.02}
+  ]
+}
