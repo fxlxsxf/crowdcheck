@@ -46,20 +46,59 @@ crowdcheck DemoMint1111111111111111111111111111111111 \
 
 ## Run it on a real token
 
-1. Get a free Helius key at <https://dashboard.helius.dev>.
-2. Export it. Keys are read from environment variables only and are never logged:
+### 1. Get a Helius API key (free)
 
-   ```bash
-   export HELIUS_API_KEY=your_key
-   # optional: Birdeye is used as a fallback for mint price history
-   export BIRDEYE_API_KEY=your_key
-   ```
+1. Go to <https://dashboard.helius.dev> and sign up. GitHub, Google or a wallet
+   login all work, and signing up does not ask you to sign any transaction.
+2. In the dashboard, open **API Keys**. A default key is already there. Copy it.
 
-3. Run:
+Check your plan's monthly request limit in the same dashboard. A full run on 100
+holders can use a noticeable share of a free plan (see the cost warning below).
 
-   ```bash
-   crowdcheck <MINT_ADDRESS>
-   ```
+### 2. Optional: get a Birdeye API key
+
+Get one at <https://bds.birdeye.so>. CROWDCHECK uses it as a fallback for token
+price history, where Helius alone sometimes can't see it. Without it everything
+still works; some metrics just show `not visible` more often.
+
+### 3. Put the key in your environment
+
+Keys are read from environment variables only and are never logged or printed.
+
+macOS / Linux:
+
+```bash
+export HELIUS_API_KEY=your_key
+export BIRDEYE_API_KEY=your_key   # optional
+```
+
+Windows PowerShell:
+
+```powershell
+$env:HELIUS_API_KEY="your_key"
+$env:BIRDEYE_API_KEY="your_key"   # optional
+```
+
+`export` only lasts until you close the terminal. To keep it, add the line to
+`~/.bashrc` or `~/.zshrc` (macOS/Linux), or set it once in PowerShell with
+`[Environment]::SetEnvironmentVariable("HELIUS_API_KEY", "your_key", "User")`.
+
+**Keep your key private.** Don't paste it into issues, screenshots or commits.
+`.env` is already in `.gitignore`; `.env.example` shows the variable names.
+
+### 4. Run
+
+Start small to see what your plan allows:
+
+```bash
+crowdcheck <MINT_ADDRESS> --top 20 --max-prior-mints 200
+```
+
+Then the full run:
+
+```bash
+crowdcheck <MINT_ADDRESS>
+```
 
 You get a table in the terminal and a `crowdcheck-<TICKER>.png` card. If a key is
 missing, the tool stops and names the variable it needs.
